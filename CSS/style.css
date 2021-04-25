@@ -1,0 +1,172 @@
+root {
+--c-black: #212121;
+--c-white: #FFFFFF;
+--c-grey: #757575;
+--c-blue: #2196F3;
+}
+
+.body {
+font-family: Roboto, Raleway;
+font-weight: 400;
+color: #212121;
+}
+
+.header {
+    width: 1600px;
+    background: #FFFFFF;
+}
+
+.a { 
+    text-decoration: none;
+   }
+
+.contacts:hover, .map:hover {
+    color: #212121
+}
+.ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.web-one{
+    color:#2196F3
+}
+.web-two{
+
+    color: #2196F3
+    }
+
+.site-nav-list{
+    display: flex;}
+
+
+.link-current{
+color:#2196F3;
+}
+
+.link{
+color:#212121;
+}
+
+.container-contacts{
+display: flex;
+}
+
+.contacts{
+font-family: Roboto
+}
+
+
+.title{
+    font-family: Roboto;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+
+.hero {
+background-color: #2196F3;
+padding-top: 200px;
+padding-bottom: 200px;
+}
+
+.button {
+    width: 200px;
+    background: #2196F3;
+}
+
+.text-container {
+display: flex;
+}
+
+.menu-text{
+display: flex;
+}
+
+.text-item{
+font-family: Roboto;
+color: #212121;
+}
+
+.text-elements{
+font-family: Roboto;
+color: #757575;
+}
+
+.text-elements-title{
+    font-family: Roboto;
+color: #212121;
+}
+
+.foto-elements{
+display: flex;
+flex-direction: column;
+}
+.foto-title{
+width: 380px;
+text-align: center;
+font-family: Roboto;
+color: #212121;
+}
+.menu-foto{
+display: flex;
+width: 1170px;
+height: 386px;
+align-items: center;
+}
+
+.team{ 
+background: #F5F4FA;
+}
+.team-title {
+font-family: Roboto;
+color: #212121;
+}
+
+.team-menu{
+display: flex;
+align-items: center;
+}
+.team-foto{
+width: 270px;
+}
+.name{
+font-family: Roboto;
+color: #212121;
+}
+.work{
+font-family: Roboto;
+color: #757575;
+}
+
+.end{
+width: 1600px;
+background: #212121;
+}
+
+.logo-end {
+font-family: Raleway;
+color: #2196F3;
+}
+.end-contaks{
+background-color: #212121;
+}
+.map{
+font-family: Roboto;
+color: #FFFFFF;
+}
+.product-elements{
+display: flex;
+}
+.product_name{
+font-family: Roboto;
+color: #212121;
+}
+.product_tape{
+font-family: Roboto;
+color: #757575;
+}
+.button_portfolio{
+display: flex;
+font-family: Roboto;
+font-weight: 500;
+}
