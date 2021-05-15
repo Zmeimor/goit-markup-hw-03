@@ -17,17 +17,15 @@ color: #212121;
 }
 
 .container{
-    width: 1230px;
-    background: var(--c-white) #FFFFFF;
-    margin: 10px 20px;
+    width: 1200px;
+padding: 0 15px;
 }
 .link {
-    list-style-type: none;
 font-family: Roboto;
+font-style: 500;
 font-weight: 500;
 color: #212121;
 line-height: 16px;
-margin-right: 50px
 }
 
 .link:hover{
@@ -36,8 +34,9 @@ margin-right: 50px
     width: 77px;
     color: #2196F3;
 }
-.link :last-child {
-margin-right: 0px;
+
+.link :not(:last-child){
+  margin-right: 50px;  
 }
 
 .ul {
@@ -67,12 +66,14 @@ color: #2196F3;
  }
 
 .head {
-align-items: baseline;
-display: flex;
-flex-direction: row;
-border: 1px solid #ECECEC;
+border-bottom: 1px solid #ECECEC;
 }
 
+.head-container{
+display: flex;
+flex-direction: row;
+align-items: center;
+}
 .link-current{
 color:#2196F3;
 }
@@ -230,13 +231,10 @@ margin-bottom: 0px;
     font-style: 500;
     font-weight: 500;
     color: #212121;
+    list-style: none;
 }
 
-.team{ 
-display: flex;
-justify-content: center;
-background: #F5F4FA;
-}
+
 
 .team-title {
 font-family: Roboto;
