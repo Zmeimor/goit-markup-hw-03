@@ -9,7 +9,10 @@ root {
 *::after {
   box-sizing: border-box;
 }
-
+.ul {
+    padding-left: 0;
+    margin: 0;
+}
 .body {
 list-style-type: none;
 font-family: Roboto;
@@ -19,6 +22,10 @@ color: #212121;
 .container{
     width: 1200px;
 padding: 0 15px;
+margin: 0 auto;
+margin-bottom: 0;
+margin-left: auto;
+margin-top: 0;
 }
 .link {
 font-family: Roboto;
@@ -67,6 +74,7 @@ color: #2196F3;
 
 .head {
 border-bottom: 1px solid #ECECEC;
+padding: 24px 0;
 }
 
 .head-container{
@@ -113,7 +121,6 @@ color: #2196F3;
 
 .title{
 width: 696px;
-height: 120px;
 font-family: Roboto;
 font-weight: 900;
 font-size: 44px;
@@ -124,6 +131,8 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 color: #FFFFFF;
 text-decoration: none;
+margin-top: 0;
+margin-bottom: 30px;
 }
 
 .title-items{
@@ -132,12 +141,14 @@ text-decoration: none;
 }
 
 .hero {
-background-color: #212121;
+background-color: #2F303A;;
 margin-bottom: 94px;
 padding-top: 200px;
 padding-bottom: 200px;
 }
-
+.hero-elements {
+    text-align: center;
+}
 .btn-items {
     width: 200px;
     margin-top: 30px;
@@ -151,6 +162,9 @@ padding-bottom: 200px;
     font-family: Roboto;
     font-size: 16px;
     line-height: 30px;
+    padding: 6px 22px;
+    margin-left: auto;
+margin-right: auto;
 }
 
 .contacts {
@@ -178,6 +192,8 @@ margin-right: 30px;
 }
 
 .text-elements{
+font-family: Roboto;
+font-weight: 400;
 width: 270px;
 color: #757575;
 font-size: 14px;
@@ -187,7 +203,8 @@ align-items: flex-start;
 }
 
 .text-elements-title{
-    font-family: Roboto;
+font-family: Roboto;
+font-weight: 700;
 color: #212121;
 align-items: flex-start;
 margin-bottom: 10px;
@@ -228,12 +245,14 @@ margin-bottom: 0px;
 
 .site-nav-list {
     font-family: Roboto;
-    font-style: 500;
     font-weight: 500;
     color: #212121;
     list-style: none;
+    padding-left: 0;
 }
-
+.site-nav-list :not(:last-child){
+    margin-right: 30px;
+}
 
 
 .team-title {
