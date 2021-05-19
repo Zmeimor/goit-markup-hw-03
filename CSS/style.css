@@ -9,10 +9,7 @@ root {
 *::after {
   box-sizing: border-box;
 }
-.ul {
-    padding-left: 0;
-    margin: 0;
-}
+
 .body {
 list-style-type: none;
 font-family: Roboto;
@@ -23,9 +20,6 @@ color: #212121;
     width: 1200px;
 padding: 0 15px;
 margin: 0 auto;
-margin-bottom: 0;
-margin-left: auto;
-margin-top: 0;
 }
 .link {
 font-family: Roboto;
@@ -46,19 +40,11 @@ line-height: 16px;
   margin-right: 50px;  
 }
 
-.ul {
-list-style-type: none;
-list-style: none;
-margin: 0;
-padding: 0;
-font-size: 26px;
-line-height: 31px;
-}
+
 
 .logo {
 font-family: Raleway;
 color:#212121;
-width: 145px;
 font-size: 26px;
 line-height: 31px;
 margin-right: 93px;
@@ -79,7 +65,6 @@ padding: 24px 0;
 
 .head-container{
 display: flex;
-flex-direction: row;
 align-items: center;
 }
 .link-current{
@@ -142,7 +127,6 @@ margin-bottom: 30px;
 
 .hero {
 background-color: #2F303A;;
-margin-bottom: 94px;
 padding-top: 200px;
 padding-bottom: 200px;
 }
@@ -168,10 +152,8 @@ margin-right: auto;
 }
 
 .contacts {
-    list-style-type: none;
     display: flex;
-flex-direction: row;
-margin-left: 331px;
+    margin-left: auto;
 }
 
 
@@ -180,7 +162,6 @@ display: flex;
 list-style-type: none;
 align-items: flex-start;
 margin-top: 0px;
-margin-bottom: 94px;
 }
 
 .text-item{
@@ -190,7 +171,9 @@ font-size: 14px;
 line-height: 16px;
 margin-right: 30px;
 }
-
+.text-item :not(:last-child){
+    margin-right: 30px;
+}
 .text-elements{
 font-family: Roboto;
 font-weight: 400;
@@ -247,8 +230,6 @@ margin-bottom: 0px;
     font-family: Roboto;
     font-weight: 500;
     color: #212121;
-    list-style: none;
-    padding-left: 0;
 }
 .site-nav-list :not(:last-child){
     margin-right: 30px;
@@ -273,13 +254,14 @@ margin: 0px auto;
 
 .team-foto{
 width: 270px;
-margin-right: 30px;
 }
 
 .team-foto :last-child{
     margin-right: 0px;
 }
-
+.team-foto :not(:last-child){
+margin-right: 30px;
+}
 
 .name{
 font-family: Roboto;
@@ -298,15 +280,14 @@ line-height: 19px;
 margin: 0px auto;
 }
 
-.team-elements{
-    text-align: center;
-}
 
 .end{
 font-family: Roboto;
 background: #212121;
 text-decoration: none;
 list-style-type: none;
+padding-top: 60px;
+padding-bottom: 60px;
 }
 
 .logo-end {
@@ -413,3 +394,31 @@ margin-right: auto;
     margin-right: 30px;
     margin-bottom: 30px;
 }
+
+.ul {
+    list-style-type: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    line-height: 31px;
+    padding-left: 0;
+    }
+
+    .timef {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    .h1, .h2, .h3, .p, .ul, .li {
+        list-style: none;
+    }
+    .info {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .adresa {
+        font-style: normal;
+    }
