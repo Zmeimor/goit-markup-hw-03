@@ -17,10 +17,11 @@ color: #212121;
 }
 
 .container{
-    width: 1200px;
+width: 1200px;
 padding: 0 15px;
 margin: 0 auto;
 }
+
 .link {
 font-family: Roboto;
 font-style: 500;
@@ -35,11 +36,6 @@ line-height: 16px;
     width: 77px;
     color: #2196F3;
 }
-
-.link :not(:last-child){
-  margin-right: 50px;  
-}
-
 
 
 .logo {
@@ -75,7 +71,6 @@ color:#2196F3;
 font-family: Roboto;
 font-weight: 500;
 color: #757575;
-width: 135px;
 margin-right: 50px;
 }
 
@@ -97,9 +92,7 @@ color: #212121;
 list-style-type: none;
 display: flex;
 flex-direction: row;
-list-style: none;
-margin: 0;
-padding: 0;
+
 }
 .site-nav-list:hover {
 font-family: Roboto;
@@ -174,9 +167,6 @@ font-size: 14px;
 line-height: 16px;
 margin-right: 30px;
 }
-.text-item :not(:last-child){
-    margin-right: 30px;
-}
 .text-elements{
 font-family: Roboto;
 font-weight: 400;
@@ -225,6 +215,7 @@ display: flex;
 width: 1170px;
 height: 386px;
 align-items: center;
+padding-left: 0px;
 margin-top: 0px;
 margin-bottom: 0px;
 }
@@ -235,33 +226,34 @@ margin-bottom: 0px;
     color: #212121;
 }
 .site-nav-list :not(:last-child){
-    margin-right: 30px;
+    margin-right: 50px;
 }
 
 
 .team-title {
 font-family: Roboto;
-font-style: 700;
 color: #212121;
-width: 264px;
 font-size: 36px;
 line-height: 42px;
-margin: 0px auto;
+margin: 0px 0px 50px 0px;
+text-align: center;
 }
 
 .team-menu{
 list-style-type: none;
 display: flex;
+padding-left: 0px;
 margin: 0px auto;
+}
+
+.info :not(:last-child){
+margin-right: 30px;
 }
 
 .team-foto{
 width: 270px;
 }
 
-.team-foto :last-child{
-    margin-right: 0px;
-}
 .team-foto :not(:last-child){
 margin-right: 30px;
 }
@@ -367,7 +359,6 @@ line-height: 30px;
 
 .btnp{
 align-items: center;
-flex-direction: row;
 font-family: Roboto;
 font-weight: 500;
 font-size: 16px;
@@ -398,30 +389,24 @@ margin-right: auto;
     margin-bottom: 30px;
 }
 
-.ul {
-    list-style-type: none;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 26px;
-    line-height: 31px;
-    padding-left: 0;
-    }
 
     .timef {
         padding-top: 94px;
         padding-bottom: 94px;
     }
 
-    .h1, .h2, .h3, .p, .ul, .li, .contacts {
-        list-style: none;
-    }
-    .info {
-        padding-top: 30px;
-        padding-bottom: 30px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
     .adresa {
         font-style: normal;
+    }
+    .ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .text-item :not(:last-child) {
+        margin-right: 30px;
+    }
+    .h1, .h2, .h3, .p, .ul, .li, .contacts {
+        list-style: none;
     }
