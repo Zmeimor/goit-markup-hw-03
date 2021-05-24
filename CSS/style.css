@@ -1,9 +1,4 @@
-root {
---c-black: #212121;
---c-white: #FFFFFF;
---c-grey: #757575;
---c-blue: #2196F3;
-}
+
 
 *::before,
 *::after {
@@ -89,7 +84,6 @@ width: 135px;
 font-family: Roboto;
 font-weight: 500;
 color: #212121;
-list-style-type: none;
 display: flex;
 flex-direction: row;
 
@@ -165,7 +159,6 @@ width: 270px;
 color: #212121;
 font-size: 14px;
 line-height: 16px;
-margin-right: 30px;
 }
 .text-elements{
 font-family: Roboto;
@@ -202,22 +195,9 @@ font-size: 36px;
 line-height: 42px;
 }
 
-.foto-picture{
-    margin-right: 30px;
-}
-.foto-picture :last-child{
-    margin-right: 0px;
-}
-
 .menu-foto{
-list-style-type: none;
 display: flex;
-width: 1170px;
-height: 386px;
 align-items: center;
-padding-left: 0px;
-margin-top: 0px;
-margin-bottom: 0px;
 }
 
 .site-nav-list {
@@ -290,7 +270,6 @@ font-family: Raleway;
 font-size: 26px;
 line-height: 31px;
 text-decoration: none;
-margin-left: 35px;
 }
 
 .web-end-two {
@@ -328,10 +307,7 @@ color: rgba(255, 255, 255, 0.6);
     color: rgba(255, 255, 255, 0.6);  
 }
 
-.button_portfolio {
-    margin-left: 475px;
-    margin-right: 475px;
-}
+
 
 .product-elements{
 display: flex;
@@ -358,18 +334,22 @@ line-height: 30px;
 }
 
 .btnp{
-align-items: center;
 font-family: Roboto;
 font-weight: 500;
 font-size: 16px;
 line-height: 26px;
 background: #F5F4FA;
 color: #212121;
-margin-right: 8px;
-margin-top: 94px;
+display: flex;
+justify-content: center;
 }
+.button_portfolio {
+display: flex;
+justify-content: center;
+}
+
 .btnp:last-child {
-    margin-right: 0px    
+    margin-right: 30px    
 }
 
 .btnp:hover {
@@ -380,16 +360,19 @@ font-size: 16px;
 line-height: 26px;
 background: #2196F3;
 color: #FFFFFF;
-margin-left: auto;
-margin-right: auto;
 }
 .prod {
     border: 1px solid #ECECEC;
     margin-right: 30px;
     margin-bottom: 30px;
+    list-style: none;
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
-
+.text {
+    padding-top: 0;
+}
     .timef {
         padding-top: 94px;
         padding-bottom: 94px;
@@ -407,6 +390,15 @@ margin-right: auto;
     .text-item :not(:last-child) {
         margin-right: 30px;
     }
-    .h1, .h2, .h3, .p, .ul, .li, .contacts {
+    .h1, .h2, .h3, .p {
+        margin: 0;
+        padding: 0;
+    }
+    ul {
         list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .foto-picture :not(:last-child){
+        margin-right: 30px;
     }
