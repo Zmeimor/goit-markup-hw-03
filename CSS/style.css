@@ -40,6 +40,9 @@ line-height: 16px;
     color: var(--blue-color);
 }
 
+.active {
+    color: var(--blue-color);
+}
 
 .logo {
 font-family: Raleway;
