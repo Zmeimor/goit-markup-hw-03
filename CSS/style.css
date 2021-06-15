@@ -91,6 +91,14 @@ color: var(--blue-color);
 width: 135px; 
 }
 
+.ct .ctn-svg {
+color: #2196F3;
+   }
+   
+.ctn-svg:hover {
+    fill: #2196F3;
+}
+
 .site-nav-list {
 font-family: Roboto;
 font-weight: 500;
@@ -130,6 +138,7 @@ margin-bottom: 30px;
 background-color: var(--bgr-color);
 padding-top: 200px;
 padding-bottom: 200px;
+background-image: url(../images/)
 }
 .hero-elements {
     text-align: center;
@@ -157,8 +166,7 @@ margin-right: auto;
 
 .contacts {
     display: flex;
-    margin-left: auto;
-}
+   }
 .contacts :not(:last-child){
     margin-right: 30px;
 }
@@ -406,12 +414,7 @@ color: var(--max-white-color);
     .adresa {
         font-style: normal;
     }
-    .ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
+   
     .text-item:not(:last-child) {
         margin-right: 30px;
     }
