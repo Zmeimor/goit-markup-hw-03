@@ -4,8 +4,8 @@
     <Meta charset="UTF-8" />
     <Meta name="WebStudio" />
     <Meta content="Помощь в бизнесе" />
-    <link rel="stylesheet" href="CSS/normalize.min.css" />
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="./css/style.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
 </head>
@@ -13,11 +13,10 @@
     <header class="head">
       <div class="container head-container">
      <a class="logo" href="/"><span class="web-one">Web</span><span class="web-two">Studio</span></a>
-    
       <nav>
       <ul>
         <ul class="site-nav">
-          <li><a href="./" class="link active">Студия</a></li>
+          <li><a href="./" class="link activate">Студия</a></li>
           <li><a href="./portfolio.html" class="link">Портфолио</a></li>
           <li><a href="" class="link">Контакты</a></li>
       </ul>
@@ -30,12 +29,12 @@
   </header>
   <main>
     <section class="hero">
-    <div class="hero-elements">
+      <div class="hero-elements">
     <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-    <button type="button" class="battons">Заказать услугу</button>
+    <button type="button" class="btn">Заказать услугу</button>
+  </div>
   </section>
-</div>
- 
+  <!-- Унікальний контент сторінки -->
   <section class="text-container">
     <div class="container">
 <h2 class="menu-text"></h2>
@@ -55,9 +54,8 @@
 </ul>
 </div>
 </section>
-
-<section class="foto-elements">
-  <div class="container">
+<section class="foto">
+  <div class="foto-elements container">
   <h2 class="foto_title">Чем мы занимаемся</h2>
     <ul class="menu-foto">
     <li>
@@ -76,55 +74,56 @@
 </div>
 </section>
   <section class="team">
-    <div class="container"">
+  <div class="team-elements container">
 <h2 class="team-title">Наша команда</h2>
   <ul class="team-menu">
+       <div>
         <li class="info">
-        <img class="team-foto" src="images/man1.jpg" width="400"/>
-        <div class="end-time">
+        <img class="team-foto" src="images/man1.jpg" width="270"/>
         <h3 class="name">Игорь Демьяненко</h3>
           <p class=work>Product Designer</p>
-        </div>
         </li>
+      </div>
+      <div>
         <li class="info">
-        <img class="team-foto" src="images/woman.jpg"width="400"/>
-        <div class="end-time">
+        <img class="team-foto" src="images/woman.jpg"width="270"/>
         <h3 class="name">Ольга Репина</h3>
-        <p class=work>Developer</p>
-      </div>
+        <p class=work>Developer </p> 
         </li>
-        <li class="info">
-        <img class="team-foto" src="images/man2.jpg" width="400"/>
-        <div class="end-time">
-        <h3 class="name name-b">Николай Тарасов</h3>
-        <p class=work>Marketing</p>
       </div>
-        </li>
+      <div>
         <li class="info">
-        <img class="team-foto" src="images/man3.jpg" width="400"/>
-        <div class="end-time">
+        <img class="team-foto" src="images/man2.jpg" width="270"/>
+        <h3 class="name">Николай Тарасов</h3>
+        <p class=work>Marketing </p> 
+        </li>
+      </div>
+      <div>
+        <li class="info">
+        <img class="team-foto" src="images/man3.jpg" width="270"/>
         <h3 class="name">Михаил Ермаков</h3>
-        <p class=work>Designer</p>
-      </div>
+        <p class=work>Designer</p> 
         </li>
-      </ul>
       </div>
+      </ul>
+  </div>
   </section>
   
 </main>
   <!-- Підвал сторінки -->
   <footer class="end">
-    <div class="container">
+        <div class="container">
+    <div>
       <a class="logo-end" href="/"><span class="web-one">Web</span><span class="web-end-two">Studio</span></a>
-     
-    <address class="adresa"> 
+     </div>
+    <address class="addres"> 
     <ul class="end-contakts">
       <li><a href=https://goo.gl/maps/wjhoi7v7686SDkos8 class="map" target="blank" 
         rel="noopener noreferrer">
         г. Киев, пр-т Леси Украинки, 26</a></li>
       <li><a href="mailto:info@example.com" class="end-contacts">info@example.com</a></li>
       <li><a href="tel:+38 099 111 11 11" class="end-contacts">+380991111111</a></li>
-    </ul>
+    </ul> 
     </address>
   </div>
   </footer>
