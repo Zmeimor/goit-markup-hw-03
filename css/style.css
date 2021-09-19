@@ -6,6 +6,7 @@
   --max-white-color: #ffffff;
   --gray-color: #757575;
   --two-white-color: #f5f4fa;
+  --card-set-gep: 30px;
 }
 
 body {
@@ -13,9 +14,7 @@ body {
   color: var(--body-color);
 }
 ul,
-h1,
-h2,
-h3 {
+p {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -27,6 +26,7 @@ img {
 }
 .head {
   background: var(--max-white-color);
+  border-bottom: 1px solid #ececec;
 }
 
 .container {
@@ -89,6 +89,8 @@ img {
 .head-container {
   display: flex;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .link-current {
@@ -113,9 +115,10 @@ img {
   display: flex;
   flex-direction: row;
 }
-.nav-li {
+.site-nav-item:not(:last-child) {
   margin-right: 50px;
 }
+
 .title {
   width: 696px;
   font-weight: 900;
@@ -128,6 +131,7 @@ img {
   text-transform: uppercase;
   color: var(--max-white-color);
   text-decoration: none;
+  padding-bottom: 30px;
 }
 
 .hero {
@@ -150,6 +154,9 @@ img {
   margin-right: auto;
   cursor: pointer;
   line-height: 1.87;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  letter-spacing: 0.06em;
 }
 .btn:hover {
   background-color: var(--blue-color);
@@ -165,17 +172,23 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-h2.menu-text {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
+
 .contacts {
   list-style-type: none;
   display: flex;
   margin-left: auto;
 }
-.contact-li {
+.contact-item:not(:last-child) {
   margin-right: 50px;
 }
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -191,17 +204,16 @@ h2.menu-text {
 .text-item {
   color: var(--body-color);
   font-size: 14px;
-  margin-right: 30px;
+  margin-bottom: 10px;
   line-height: 1.14;
   text-decoration: none;
   list-style-type: none;
 }
-
+.text-item:not(:last-child) {
+  margin-right: 30px;
+}
 .content-element {
-  text-decoration: none;
   display: flex;
-  list-style-type: none;
-  align-items: flex-start;
 }
 
 .text-elements {
@@ -216,12 +228,13 @@ h2.menu-text {
   text-decoration: none;
 }
 .foto {
+  padding-top: 0px;
 }
 .foto-elements {
   display: flex;
   flex-direction: column;
 }
-.foto-li {
+.foto-item:not(:last-child) {
   margin-right: 30px;
 }
 .foto_title {
@@ -233,11 +246,7 @@ h2.menu-text {
   line-height: 1.16;
   margin: 0px 0px 50px 0px;
 }
-.menu-foto {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-}
+
 .site-nav {
   font-style: 500;
   font-weight: 500;
@@ -247,12 +256,18 @@ h2.menu-text {
 .team {
   background: var(--two-white-color);
 }
-.info {
-  margin-right: 30px;
+.team-list {
+  display: flex;
+}
+.team-items {
   background-color: var(--max-white-color);
 }
+.team-items:not(:last-child) {
+  margin-right: 30px;
+}
 .team-info {
-  padding-top: 30px;
+  text-align: center;
+  padding-bottom: 30px;
   padding-top: 30px;
 }
 .team-title {
@@ -262,10 +277,6 @@ h2.menu-text {
   line-height: 1.16;
   margin: 0px 0px 50px 0px;
   text-align: center;
-}
-
-.team-menu {
-  display: flex;
 }
 
 .foto-elements {
@@ -279,26 +290,32 @@ h2.menu-text {
 
 .menu-foto {
   display: flex;
-  align-items: center;
 }
 
-.name {
+.team-name {
   font-weight: 500;
   color: var(--body-color);
   font-size: 16px;
   line-height: 1.18;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
-.work {
+.team-work {
   color: var(--gray-color);
   font-size: 16px;
   line-height: 1.18;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .end {
-  background: var(--body-color);
+  background: var(--bgr-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .addres {
   font-style: normal;
+  margin-top: 20px;
 }
 .logo-end {
   font-family: Raleway, sans-serif;
@@ -309,17 +326,13 @@ h2.menu-text {
 .web-end-two {
   color: var(--max-white-color);
 }
-.end-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+
 .end-contakts {
-  font-style: 400;
-  background-color: var(--body-color);
+  font-weight: 400;
+  background-color: var(--bgr-color);
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
-  margin-top: 20px;
 }
 .map {
   color: var(--max-white-color);
@@ -329,7 +342,7 @@ h2.menu-text {
   width: 231px;
   color: rgba(255, 255, 255, 0.6);
 }
-.end-li {
+.end-item:not(:last-child) {
   margin-bottom: 9px;
 }
 .end-contacts:hover {
@@ -344,26 +357,62 @@ h2.menu-text {
   color: var(--max-white-color);
 }
 .product {
-  margin-top: 100px;
-  margin-bottom: 94px;
+  padding-top: 100px;
+  padding-bottom: 94px;
 }
 .product-elements {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 .product-name {
+  font-family: Roboto;
+  color: var(--body-color);
+  font-size: 18px;
+  line-height: 2;
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-weight: 700;
   color: var(--body-color);
   font-size: 18px;
   line-height: 3.6;
 }
 .product-tape {
+  font-family: Roboto;
   color: var(--gray-color);
   font-size: 16px;
-  line-height: 3;
+  line-height: 1.8;
 }
+
+.button-portfolio {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.btnp-item:not(:last-child) {
+  margin-right: 8px;
+}
+.product {
+}
+
+.prod-text {
+  padding: 20px 24px;
+  border-right: 1px solid var(--white-color);
+  border-bottom: 1px solid var(--white-color);
+  border-left: 1px solid var(--white-color);
+}
+.prod-item {
+  flex-basis: calc(100% / 3 - var(--card-set-gep));
+  margin-top: var(--card-set-gep);
+  margin-left: var(--card-set-gep);
+}
+
 .btnp {
+  text-align: center;
+  letter-spacing: 0.03em;
   display: flex;
   font-weight: 500;
   font-size: 16px;
@@ -373,6 +422,9 @@ h2.menu-text {
   display: flex;
   justify-content: center;
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .btnp:focus {
@@ -390,51 +442,9 @@ h2.menu-text {
   background: var(--blue-color);
   color: var(--max-white-color);
 }
-.btnp-li {
+.btnp-item {
   list-style-type: none;
 }
-.btnp-li:focus {
+.btnp-item:focus {
   list-style-type: none;
-}
-
-.button-portfolio {
-  display: flex;
-  justify-content: center;
-}
-
-.btnp-li {
-  margin-right: 8px;
-}
-.product {
-}
-
-.product-elements {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  margin-left: -30px;
-}
-
-.product-name {
-  font-family: Roboto;
-  color: var(--body-color);
-  font-size: 18px;
-  line-height: 2;
-}
-
-.product-tape {
-  font-family: Roboto;
-  color: var(--gray-color);
-  font-size: 16px;
-  line-height: 1.8;
-}
-.prod-text {
-  padding: 20px 24px;
-  border-right: 1px solid var(--white-color);
-  border-bottom: 1px solid var(--white-color);
-  border-left: 1px solid var(--white-color);
-}
-.prod-li {
-  margin-left: 30px;
-  margin-top: 30px;
 }
