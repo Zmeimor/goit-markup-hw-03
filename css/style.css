@@ -40,6 +40,8 @@ h3 {
 .head {
   background: var(--max-white-color);
   border-bottom: 1px solid #ececec;
+  font-weight: 500;
+  letter-spacing: 0.03em;
 }
 
 .container {
@@ -79,6 +81,7 @@ h3 {
   font-size: 26px;
   line-height: 1.19;
   margin-right: 93px;
+  letter-spacing: 0.02em;
 }
 
 .web-end-two,
@@ -144,6 +147,7 @@ h3 {
   text-transform: uppercase;
   color: var(--max-white-color);
   text-decoration: none;
+  margin-bottom: 30px;
 }
 
 .hero {
@@ -169,6 +173,7 @@ h3 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   letter-spacing: 0.06em;
+  font-weight: 700;
 }
 .btn:hover {
   background-color: var(--blue-color);
@@ -213,6 +218,7 @@ h3 {
 }
 
 .text-item {
+  width: 270px;
 }
 .text-item:not(:last-child) {
   margin-right: 30px;
@@ -225,7 +231,7 @@ h3 {
   color: var(--gray-color);
   font-size: 14px;
   margin-bottom: 10px;
-  line-height: 1.14;
+  line-height: 1.71;
   text-decoration: none;
   list-style-type: none;
 }
@@ -235,6 +241,9 @@ h3 {
   color: var(--body-color);
   text-decoration: none;
   margin-bottom: 10px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 .foto {
   padding-top: 0px;
@@ -434,17 +443,19 @@ h3 {
   display: flex;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
 .btnp:focus {
   flex-direction: row;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.62;
   background: var(--blue-color);
   color: var(--max-white-color);
+  border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .btnp:hover {
   flex-direction: row;
@@ -453,6 +464,9 @@ h3 {
   line-height: 1.62;
   background: var(--blue-color);
   color: var(--max-white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .btnp-item {
   list-style-type: none;
